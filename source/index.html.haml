@@ -1,0 +1,43 @@
+---
+title: static template
+body_class: index
+---
+
+-#%img{ src: 'images/demo.png', width: '100%'}
+
+- demo_files = Dir['source/images/demo/*']
+- demo_files.map { |f| f.split('/') }
+- demo_files_sorted = demo_files.sort {|a,b| a.gsub(/[^\d]/, '').to_i <=> b.gsub(/[^\d]/, '').to_i}
+-# demo_files_sorted
+-#.btn-group.btn-group-vertical.btn-block
+.row
+  - demo_files_sorted.each do |l|
+    - if !l.match(/mobile/)
+      - if l.match(/(png|jpg)/)
+        - filename = l.gsub('source/images/demo','').gsub('/','')
+        - link = filename.gsub(/\.(png|jpg|pdf)/,'')
+        .col-xs-6.col-sm-3
+          .index-preview
+            = link_to "#{link}.html" do
+              %img{src: "./#{l.gsub('source','')}" }
+              %br
+%hr
+.row
+  - demo_files_sorted.each do |l|
+    - if l.match(/mobile/)
+      - if l.match(/(png|jpg)/)
+        - filename = l.gsub('source/images/demo','').gsub('/','')
+        - link = filename.gsub(/\.(png|jpg|pdf)/,'')
+        .col-xs-6.col-sm-3
+          .index-preview
+            = link_to "#{link}.html" do
+              %img{src: "./#{l.gsub('source','')}" }
+              %br
+
+%hr
+.btn-group.btn-group-vertical.btn-block
+  - demo_files.each do |l|
+    - if l.match(/\./) && !l.match(/(png|jpg)/)
+      - filename = l.gsub('source/images/demo','').gsub('/','')
+      = link_to "#{filename}", "#{filename}", class: 'btn btn-lg btn-block btn-default'
+
