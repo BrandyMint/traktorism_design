@@ -5,8 +5,11 @@ body_class: prototype
 ---
 
 .signup-photo-block
-  = ficon 'camera-1', size: 20, color: 'gray-light'
-  Сфотографировать
+  %input.signup-photo-input{type: :file, accept: 'image/*', value: 'Сфотографировать', role: 'signup-photo-input'}
+  %a{role: 'signup-take-picture'}
+    = ficon 'camera-1', size: 20, color: 'gray-light'
+    Сфотографировать
+  
 %br
 .row
   .col-md-6.col-md-offset-3

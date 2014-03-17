@@ -13,3 +13,8 @@
 
 $ ->
   console.log 'it works'
+  $('@signup-take-picture').on 'click', (e) ->
+    e.preventDefault()
+    $('@signup-photo-input').click()
+
+
