@@ -5,9 +5,9 @@ body_class: prototype
 ---
 
 .signup-photo-block
-  = ficon 'camera-1', size: 32, color: 'gray-light'
+  = ficon 'camera-1', size: 20, color: 'gray-light'
   Сфотографировать
-
+%br
 .row
   .col-md-6.col-md-offset-3
     %form.form-vertical
@@ -19,9 +19,12 @@ body_class: prototype
       %input.form-control{placeholder: 'Название техники'}
       %input.form-control{placeholder: 'Ваше имя'}
       %input.form-control{placeholder: 'Номер телефона'}
+      %br
       %small.text-muted
         Номер телефона используется для авторизации в системе
         и не виден никому, кроме вас.
+      %br
+      %br
       %a.btn.btn-primary.btn-lg.btn-block{ href: 'step2.html'} Продолжить
 
 
