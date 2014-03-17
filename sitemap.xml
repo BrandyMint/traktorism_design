@@ -8,74 +8,92 @@
     <meta content='initial-scale=1.0,width=device-width' name='viewport'>
     <meta content='yes' name='apple-mobile-web-app-capable'>
     <meta content='translucent-black' name='apple-mobile-web-app-status-bar-style'>
-    <link href='./stylesheets/application.css' media='screen' rel='stylesheet' type='text/css'>
+    <link href='http://brandymint.github.io/traktorism_design/stylesheets/application.css' media='screen' rel='stylesheet' type='text/css'>
   </head>
   <body class='page'>
     <?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       <url>
-        <loc>http://www.brandymint.com/demo.html</loc>
-        <lastmod>2014-03-13T00:00:00+04:00</lastmod>
+        <loc>http://brandymint.github.io/traktorism_design//demo.html</loc>
+        <lastmod>2014-03-17T00:00:00+04:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>http://www.brandymint.com/error.html</loc>
-        <lastmod>2014-03-13T00:00:00+04:00</lastmod>
+        <loc>http://brandymint.github.io/traktorism_design//error.html</loc>
+        <lastmod>2014-03-17T00:00:00+04:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>http://www.brandymint.com/index.html</loc>
-        <lastmod>2014-03-13T00:00:00+04:00</lastmod>
+        <loc>http://brandymint.github.io/traktorism_design//fontello/index.html</loc>
+        <lastmod>2014-03-17T00:00:00+04:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>http://www.brandymint.com/tech_sketch_desktop.pdf.html</loc>
-        <lastmod>2014-03-13T00:00:00+04:00</lastmod>
+        <loc>http://brandymint.github.io/traktorism_design//index.html</loc>
+        <lastmod>2014-03-17T00:00:00+04:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>http://www.brandymint.com/tech_sketch_desktop.html</loc>
-        <lastmod>2014-03-13T00:00:00+04:00</lastmod>
+        <loc>http://brandymint.github.io/traktorism_design//signup/index.html</loc>
+        <lastmod>2014-03-17T00:00:00+04:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>http://www.brandymint.com/tech_sketch_desktop2.html</loc>
-        <lastmod>2014-03-13T00:00:00+04:00</lastmod>
+        <loc>http://brandymint.github.io/traktorism_design//signup/step2.html</loc>
+        <lastmod>2014-03-17T00:00:00+04:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>http://www.brandymint.com/tech_sketch_desktop3.html</loc>
-        <lastmod>2014-03-13T00:00:00+04:00</lastmod>
+        <loc>http://brandymint.github.io/traktorism_design//tech_sketch_desktop.pdf.html</loc>
+        <lastmod>2014-03-17T00:00:00+04:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>http://www.brandymint.com/tech_sketch_desktop4.html</loc>
-        <lastmod>2014-03-13T00:00:00+04:00</lastmod>
+        <loc>http://brandymint.github.io/traktorism_design//tech_sketch_desktop.html</loc>
+        <lastmod>2014-03-17T00:00:00+04:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>http://www.brandymint.com/tech_sketch_desktop5.html</loc>
-        <lastmod>2014-03-13T00:00:00+04:00</lastmod>
+        <loc>http://brandymint.github.io/traktorism_design//tech_sketch_desktop2.html</loc>
+        <lastmod>2014-03-17T00:00:00+04:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>http://www.brandymint.com/tech_sketch_desktop6.html</loc>
-        <lastmod>2014-03-13T00:00:00+04:00</lastmod>
+        <loc>http://brandymint.github.io/traktorism_design//tech_sketch_desktop3.html</loc>
+        <lastmod>2014-03-17T00:00:00+04:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>http://www.brandymint.com/tech_sketch_desktop7.html</loc>
-        <lastmod>2014-03-13T00:00:00+04:00</lastmod>
+        <loc>http://brandymint.github.io/traktorism_design//tech_sketch_desktop4.html</loc>
+        <lastmod>2014-03-17T00:00:00+04:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://brandymint.github.io/traktorism_design//tech_sketch_desktop5.html</loc>
+        <lastmod>2014-03-17T00:00:00+04:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://brandymint.github.io/traktorism_design//tech_sketch_desktop6.html</loc>
+        <lastmod>2014-03-17T00:00:00+04:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://brandymint.github.io/traktorism_design//tech_sketch_desktop7.html</loc>
+        <lastmod>2014-03-17T00:00:00+04:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
