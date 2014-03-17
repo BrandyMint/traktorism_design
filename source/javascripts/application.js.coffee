@@ -17,4 +17,7 @@ $ ->
     e.preventDefault()
     $('@signup-photo-input').click()
 
+  signupForm1 = $('@signup-form-1')
+  signupForm1Input = $('@signup-form-1 input')
+  #signupForm1Input.on 'keydown', (e) ->
 

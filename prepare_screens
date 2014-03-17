@@ -1,0 +1,3 @@
+#!/bin/bash
+rm -rf screens/composed.png;
+convert screens/*.png -bordercolor gray -border 20x20 +append screens/composed.png;

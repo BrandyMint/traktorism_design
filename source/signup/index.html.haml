@@ -13,18 +13,18 @@ body_class: prototype
 %br
 .row
   .col-md-6.col-md-offset-3
-    %form.form-vertical{ href: 'step2.html'}
+    %form.form-vertical{ href: 'step2.html', role: 'signup-form-1'}
       .form-group
         %select.form-control{placeholder: 'Тип'}
           - options = ['Трактор', 'Экскаватор', 'Кран', 'Манипулятор', 'Автотранспорт', 'Прочее']
           - options.each do |o|
             %option= o
       .form-group
-        %input.form-control{placeholder: 'Название техники'}
+        %input.form-control{placeholder: 'Название техники', required: :required}
       .form-group
-        %input.form-control{placeholder: 'Имя владельца'}
+        %input.form-control{placeholder: 'Имя владельца', required: :required}
       .form-group
-        %input.form-control{placeholder: '8(999)111-22-22 (Телефон для заявок)', type: :tel}
+        %input.form-control{placeholder: '8(999)111-22-22 (Телефон для заявок)', maxlength: 11, type: :tel, required: :required}
       %a.btn.btn-primary.btn-lg.btn-block{type: :submit,  href: 'step2.html' }  Зарегистрировать
 
 
