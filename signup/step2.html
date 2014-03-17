@@ -11,7 +11,7 @@
     <link href='http://brandymint.github.io/traktorism_design/stylesheets/application.css' media='screen' rel='stylesheet' type='text/css'>
   </head>
   <body class='prototype'>
-    <div class='navbar navbar-default navbar-fixed-top application-navbar'>
+    <div class='navbar navbar-default navbar-static-top application-navbar'>
       <div class='container'>
         <div class='pull-left'>
                     <a class="navbar-brand" href="http://brandymint.com/">Тракторизм
@@ -26,19 +26,23 @@
         <div class='row'>
           <div class='col-xs-3'>
             <div class='signup-photo-block photo-block-small'>
-              <i size="32" color="gray-light" class="fontello-icon-camera-1 icon-size-32 icon-color-gray-light 
+              <i size="20" color="gray-light" class="fontello-icon-camera-1 icon-size-20 icon-color-gray-light 
                     v-align- "></i>
             </div>
           </div>
           <div class='col-xs-9'>
             <small class='text-muted'>Трактор</small>
-            <h3 class='no-margins'>Т-150 гусеничный</h3>
+            <h4 class='no-margins'>Т-150 гусеничный</h4>
             <small>
               <a href=''>изменить</a>
             </small>
           </div>
         </div>
-        <hr>
+        <hr class='mini'>
+        <small class='text-muted'>
+          Добавьте информацию о вашей технике.
+          При поступлении заказа на вашу технику мы уведомим вас с помощью SMS.
+        </small>
         <div class='row'>
           <div class='col-md-6 col-md-offset-3'>
             <form class='form-vertical'>
@@ -56,9 +60,8 @@
               <br>
               <p>
                 не получили SMS-код?
-                <a href='javascript:confirm("ваш номер 8 906 333 44 55?");alert("код выслан на ваш номер")'>выслать ещё раз</a>
+                <a class='btn btn-default btn-sm' href='javascript:confirm("ваш номер 8 906 333 44 55?");alert("код выслан на ваш номер")'>выслать ещё раз</a>
               </p>
-              <hr class='mini'>
               <a class='btn btn-primary btn-lg btn-block' href='step2.html'>Сохранить</a>
             </form>
           </div>
