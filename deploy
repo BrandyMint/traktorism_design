@@ -1,4 +1,5 @@
 #!/bin/bash
+./prepare_screens
 git add -A
 git commit -m 'build'
 bundle exec middleman deploy
