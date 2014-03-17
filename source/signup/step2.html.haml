@@ -1,0 +1,44 @@
+---
+title: Подача объявления (Шаг 1 из 3)
+layout: prototype
+body_class: prototype
+---
+
+.row
+  .col-xs-3
+    .signup-photo-block.photo-block-small
+      = ficon 'camera-1', size: 32, color: 'gray-light'
+  .col-xs-9
+    %small.text-muted Трактор
+    %h3.no-margins Т-150 гусеничный
+    %small
+      %a{href: ''} изменить
+%hr
+.row
+  .col-md-6.col-md-offset-3
+    %form.form-vertical
+      %h4 Цена аренды
+      .input-group
+        %span.input-group-addon в час
+        %input.form-control{placeholder: 'обязательно'}
+      
+      .input-group
+        %span.input-group-addon в день
+        %input.form-control{placeholder: ''}
+      
+      %textarea.form-control.signup-description{ placeholder: 'Описание техники' }
+        
+      %input.form-control{placeholder: 'введите код, полученный по смс'}
+      %br
+      %p
+        не получили SMS-код?
+        %a{href: 'javascript:confirm("ваш номер 8 906 333 44 55?");alert("код выслан на ваш номер")'} выслать ещё раз
+ 
+      -#%small.text-muted
+        Номер телефона используется для авторизации в системе
+        и не виден никому, кроме вас.
+      %hr.mini
+      %a.btn.btn-primary.btn-lg.btn-block{ href: 'step2.html'} Сохранить
+
+
+

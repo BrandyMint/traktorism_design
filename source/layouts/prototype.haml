@@ -1,0 +1,24 @@
+!!! 5
+%html{lang: 'en', class: 'no-js'}
+  %head
+    = partial 'layouts/head'
+  %body{class: current_page.data.body_class || 'page'}
+    .navbar.navbar-default.navbar-fixed-top.application-navbar
+      .container
+        .pull-left
+          -#= link_to root_app_path do
+          = link_to 'http://brandymint.com/', class: 'navbar-brand' do
+            Тракторизм
+
+        -#.navbar-collapse.collapse
+          %ul.nav.navbar-nav.pull-right
+            -# TODO add active link state
+            %li
+              = link_to 'link', '#'
+        .clearfix
+    .prototype-container
+      .container
+        = yield
+
+= partial 'layouts/javascripts'
+

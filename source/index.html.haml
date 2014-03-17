@@ -11,6 +11,12 @@ body_class: index
 -# demo_files_sorted
 -#.btn-group.btn-group-vertical.btn-block
 .row
+  .col-sm-10.col-sm-offset-1.col-md-3
+    %br
+    = link_to 'signup flow', 'signup/', class: 'btn btn-lg btn-block btn-default'
+%hr
+
+.row
   - demo_files_sorted.each do |l|
     - if !l.match(/mobile/)
       - if l.match(/(png|jpg)/)
