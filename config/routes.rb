@@ -1,15 +1,19 @@
 module RouteHelpers
   def root_app_path
-    "./"
+    if build?
+      "http://brandymint.github.io/traktorism_design/"
+    else
+      "/"
+    end
   end
 
   def stylesheet_path
-    "./stylesheets/application.css"
+    "#{root_app_path}stylesheets/application.css"
   end
 
   def production_url
     ## Update this with you production URL
-    "http://www.brandymint.com"
+    root_app_path
   end
 
   def page_path

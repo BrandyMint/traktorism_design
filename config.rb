@@ -18,6 +18,7 @@ require 'config/icon_helper'
 require 'haml_coffee_assets'
 require 'builder'
 
+
 helpers do
   include RouteHelpers
   include ApplicationHelpers
@@ -124,7 +125,6 @@ end
 
 # Build-specific configuration
 configure :build do
-
   # Clean 'Build' folder clean
   ignore "/javascripts/application/*"
   ignore "/javascripts/vendor/lib/*"
