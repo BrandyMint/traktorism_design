@@ -37,7 +37,7 @@
         <br>
         <div class='row'>
           <div class='col-md-6 col-md-offset-3'>
-            <form class='form-vertical' href='step2.html'>
+            <form class='form-vertical' href='step2.html' role='signup-form-1'>
               <div class='form-group'>
                 <select class='form-control' placeholder='Тип'>
                   <option>Трактор</option>
@@ -49,13 +49,13 @@
                 </select>
               </div>
               <div class='form-group'>
-                <input class='form-control' placeholder='Название техники'>
+                <input class='form-control' placeholder='Название техники' required='required'>
               </div>
               <div class='form-group'>
-                <input class='form-control' placeholder='Имя владельца'>
+                <input class='form-control' placeholder='Имя владельца' required='required'>
               </div>
               <div class='form-group'>
-                <input class='form-control' placeholder='8(999)111-22-22 (Телефон для заявок)' type='tel'>
+                <input class='form-control' maxlength='11' placeholder='8(999)111-22-22 (Телефон для заявок)' required='required' type='tel'>
               </div>
               <a class='btn btn-primary btn-lg btn-block' href='step2.html' type='submit'>Зарегистрировать</a>
             </form>
