@@ -5,7 +5,7 @@
     <meta charset='utf-8' content='text/html' http-equiv='content-type'>
     <meta content='ie=edge,chrome=1' http-equiv='x-ua-compatible'>
     <meta content='Brandy Mint LLC' name='author'>
-    <meta content='initial-scale=1.0,width=device-width' name='viewport'>
+    <meta content='initial-scale=1.0,width=device-width,maximum-scale=1.0,user-scalable=no' name='viewport'>
     <meta content='yes' name='apple-mobile-web-app-capable'>
     <meta content='translucent-black' name='apple-mobile-web-app-status-bar-style'>
     <link href='http://brandymint.github.io/traktorism_design/stylesheets/application.css' media='screen' rel='stylesheet' type='text/css'>
@@ -14,7 +14,11 @@
     <div class='navbar navbar-default navbar-static-top application-navbar'>
       <div class='container'>
         <div class='pull-left'>
-                    <a class="navbar-brand" href="http://brandymint.github.io/traktorism_design/">Тракторизм
+                    <a class="navbar-brand" href="javascript:window.history.back()"><i class="fontello-icon-left-open-big icon-size- icon-color- 
+                v-align- "></i>
+          </a>
+
+                    <a class="navbar-brand" href="http://brandymint.github.io/traktorism_design/">Аренда спецтехники
           </a>
 
         </div>
@@ -23,37 +27,37 @@
     </div>
     <div class='prototype-container'>
       <div class='container'>
-        <div class='signup-photo-block'>
+        <div class='btn btn-lg btn-default btn-block btn-take-picture'>
           <input accept='image/*' class='signup-photo-input' role='signup-photo-input' type='file' value='Сфотографировать'>
-          <a role='signup-take-picture'>
+          <a class='gray-link' role='signup-take-picture'>
             <i size="20" color="gray-light" class="fontello-icon-camera-1 icon-size-20 icon-color-gray-light 
                   v-align- "></i>
-            Сфотографировать
           </a>
         </div>
         <br>
         <div class='row'>
           <div class='col-md-6 col-md-offset-3'>
-            <form class='form-vertical'>
-              <select class='form-control' placeholder='Тип'>
-                <option>Выберите тип техники</option>
-                <option>Трактор</option>
-                <option>Экскаватор</option>
-                <option>Кран</option>
-                <option>Манипулятор</option>
-                <option>Автотранспорт</option>
-              </select>
-              <input class='form-control' placeholder='Название техники'>
-              <input class='form-control' placeholder='Ваше имя'>
-              <input class='form-control' placeholder='Номер телефона'>
-              <br>
-              <small class='text-muted'>
-                Номер телефона используется для авторизации в системе
-                и не виден никому, кроме вас.
-              </small>
-              <br>
-              <br>
-              <a class='btn btn-primary btn-lg btn-block' href='step2.html'>Продолжить</a>
+            <form class='form-vertical' href='step2.html'>
+              <div class='form-group'>
+                <select class='form-control' placeholder='Тип'>
+                  <option>Трактор</option>
+                  <option>Экскаватор</option>
+                  <option>Кран</option>
+                  <option>Манипулятор</option>
+                  <option>Автотранспорт</option>
+                  <option>Прочее</option>
+                </select>
+              </div>
+              <div class='form-group'>
+                <input class='form-control' placeholder='Название техники'>
+              </div>
+              <div class='form-group'>
+                <input class='form-control' placeholder='Имя владельца'>
+              </div>
+              <div class='form-group'>
+                <input class='form-control' placeholder='8(999)111-22-22 (Телефон для заявок)' type='tel'>
+              </div>
+              <a class='btn btn-primary btn-lg btn-block' href='step2.html' type='submit'>Зарегистрировать</a>
             </form>
           </div>
         </div>
