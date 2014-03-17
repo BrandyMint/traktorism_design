@@ -12,8 +12,8 @@ body_class: prototype
     %small.text-muted Трактор
     %h4.no-margins.text-overflow Т-150 гусеничный (СМД-60, 160 л.с)
     %h5.no-margin-bottom.text-overflow
-      Василий
       8(905)334-44-35
+      Василий
 %hr.small
 -#%small.text-muted
   Добавьте информацию о вашей технике.
@@ -36,8 +36,8 @@ body_class: prototype
           .col-xs-6
             %input.form-control{placeholder: 'SMS-код', size: 4, maxlength: 4, type: :tel, required: :required }
           .col-xs-6
-            %a.btn.btn-default{href: 'javascript:confirm("ваш номер 8 906 333 44 55?");alert("код выслан на ваш номер")'}
-              %span.text-muted выслать ещё раз
+            %a.btn.btn-default.btn-block.btn-warning{href: 'javascript:confirm("ваш номер 8 906 333 44 55?");alert("код выслан на ваш номер")'}
+              выслать ещё раз
       %a.btn.btn-primary.btn-lg.btn-block{ href: 'javascript:alert("Регистрация пройдена");'} Опубликовать
 
 
