@@ -11,6 +11,10 @@ module RouteHelpers
     "#{root_app_path}stylesheets/application.css"
   end
 
+  def javascript_path
+    "#{root_app_path}javascripts/application.js"
+  end
+
   def production_url
     ## Update this with you production URL
     root_app_path
