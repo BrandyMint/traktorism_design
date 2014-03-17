@@ -7,8 +7,12 @@
       .container
         .pull-left
           -#= link_to root_app_path do
+          = link_to "javascript:window.history.back()", class: 'navbar-brand' do
+            = ficon 'left-open-big'
+
+
           = link_to "#{root_app_path}", class: 'navbar-brand' do
-            Тракторизм
+            Аренда спецтехники
 
         -#.navbar-collapse.collapse
           %ul.nav.navbar-nav.pull-right
