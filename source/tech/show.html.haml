@@ -4,16 +4,6 @@ layout: prototype
 body_class: prototype main
 ---
 
-.alert.alert-success
-  %a.close &times;
-  %p
-    Ваше объявление опубликовано и занимает
-    %strong 120 место
-    в категории
-    %strong Трактора
-  %br
-  %a.btn.btn-primary.btn-block Поднять объявление в списке
-  
 %section.tech-main-content
   .row
     .col-xs-12.col-md-8
@@ -35,25 +25,28 @@ body_class: prototype main
           %tr
             %td= key
             %td= value
-            
-      %form.form-vertical
-        %h3 Заказ трактора
-        .form-group
-          .row
-            .col-xs-6
-              %input.form-control{type: 'date', placeholder: 'Начало работ'}
-            .col-xs-6
-              %input.form-control{type: :tel, maxlength: 3, placeholder: 'Количество дней'}
-        .form-group
-          %input.form-control{placeholder: "Ваше имя", role: "name", type: "text"}
-        .form-group
-          %input.form-control{maxlength: "", placeholder: "Контактный телефон", role: "phone", size: "", type: "tel"}
-        
-        %a.btn.btn-lg.btn-success.btn-block{type: "submit", value: "Заказать", href: ''} Заказать
 
-%section.tech-container
-  .container
-    %h4
-      Другая техника от
-      = partial 'shared/user'
-    = partial 'tech/block'
+      = partial 'shared/order_form'
+%hr
+.well
+  %p
+    Ваше объявление опубликовано и занимает
+    %strong 120 место
+    в категории
+    %strong Трактора
+  %a.btn.btn-warning.btn-block Поднять объявление в списке
+
+
+%hr
+
+%section.tech-similar
+  %h4
+    Другая техника от
+    %nowrap= partial 'shared/user'
+  %table.table
+    - for i in 0..3
+      %tr{ href: "#{root_app_path}tech/show.html", role: 'tech-block'}
+        %td
+          %strong Трактор Т-150 гусечничный
+        %td
+          6000 р./день
