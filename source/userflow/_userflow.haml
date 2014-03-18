@@ -18,12 +18,14 @@
       - if pages.present?
         - pages.each do |page|
           .col-xs-6.col-sm-3
-            %img.userflow-image{src: "#{root_app_path}images/screens/#{page}" }
+            .userflow-block
+              %img{src: "#{root_app_path}images/screens/#{page}" }
       - if locals[:addon].present?
         .col-xs-6.col-sm-3
-          .alert.alert-info
-            = ficon 'right-open-big'
-            = locals[:addon]
+          .userflow-block
+            .alert.alert-info
+              = ficon 'right-open-big'
+              = locals[:addon]
 
 
 
