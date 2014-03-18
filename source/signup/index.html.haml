@@ -1,7 +1,7 @@
 ---
 title: Подача объявления (Шаг 1 из 2)
 layout: prototype
-body_class: prototype
+body_class: prototype navbar-min
 ---
 
 .btn.btn-lg.btn-default.btn-block.btn-take-picture
@@ -13,7 +13,7 @@ body_class: prototype
 %br
 .row
   .col-md-6.col-md-offset-3
-    %form.form-vertical{ href: 'step2.html', role: 'signup-form-1'}
+    %form.form-vertical{ role: 'signup-form-1'}
       .form-group
         %select.form-control{placeholder: 'Тип'}
           - options = ['Трактор', 'Экскаватор', 'Кран', 'Манипулятор', 'Автотранспорт', 'Прочее']

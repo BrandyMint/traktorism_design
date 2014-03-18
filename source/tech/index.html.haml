@@ -1,0 +1,39 @@
+---
+title: Подача объявления (Шаг 1 из 2)
+layout: prototype
+body_class: prototype
+---
+
+
+.tech-categories
+  %ul.nav.nav-pills
+    - categories = ['Все категории', 'Трактор', 'Экскаватор', 'Кран', 'Манипулятор', 'Автотранспорт', 'Прочее']
+    - categories.each_with_index do |c, i|
+      %li{class: "tech-category-item #{i==0 ? 'active' : '' }"}
+        %a.tech-category-item-link= c
+
+%section.tech-container
+  .container
+    .pull-right
+      .btn-group
+        .btn.btn-default.active
+          плитка
+        .btn.btn-default
+          таблица
+
+    .clearfix
+    - for i in 0..6
+      = partial 'tech/block'
+
+    %ul.pagination
+      - for i in 1..5
+        %li{class: "#{i==1 ? 'active' : '' }"}
+          %a
+            = i
+
+
+  %hr
+  .container
+    %h3 Лучшие предложения
+    - for i in 0..3
+      = partial 'tech/block'

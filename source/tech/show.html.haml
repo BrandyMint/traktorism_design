@@ -1,29 +1,20 @@
 ---
 title: Трактор Т-150 гусечничный
 layout: prototype
-body_class: prototype
+body_class: prototype main
 ---
-
--#%section.order-tech.visible-xs.visible-sm
-  .container
-    .row
-      .col-xs-12
-        %a.col-xs-10.col-xs-push-1.order{href: "#new_house_order"} Заказать этот трактор
-%section.house-main-content
+%section.tech-main-content
   .row
     .col-xs-12.col-md-8
       .visible-xs.visible-sm
-        %h3 Трактор Т-150 гусечничный
-      .row
-        %h1.visible-md.visible-lg.mt30.col-md-8
-          Заказать Трактор Т-150 гусечничный
-      %p.visible-md.visible-lg
-        = "#{ficon 'user-1'} Petrovich"
+        %h3.no-margin-top Трактор Т-150 гусечничный
+      %p
+        = partial 'shared/user'
       .tech-photo
         %img.tech-photo-img{src: "#{root_app_path}images/t150.jpg"}
       .row.visible-xs.visible-sm
         .col-xs-9.col-xs-offset-2
-          %h4.light-price
+          %h3
             %nowrap 8 900 руб.
             %small.text-muted
               в день
@@ -34,12 +25,7 @@ body_class: prototype
             %td= key
             %td= value
             
-    .sidebar.col-xs-12.col-md-4
-      .right-price.visible-lg.visible-md
-        %div
-          %nowrap 8 900 руб.
-          в день
-      %form.form-horizontal
+      %form.form-vertical
         %h3 Заказ трактора
         .form-group
           .row
@@ -52,7 +38,11 @@ body_class: prototype
         .form-group
           %input.form-control{maxlength: "", placeholder: "Контактный телефон", role: "phone", size: "", type: "tel"}
         
-        %a.btn.btn.btn-success.btn-block{type: "submit", value: "Заказать", href: ''}
-%section.houses-block
+        %a.btn.btn-lg.btn-success.btn-block{type: "submit", value: "Заказать", href: ''} Заказать
+
+%section.tech-container
   .container
-    %p.light-h2 Похожая техника
+    %h4
+      Другая техника от
+      = partial 'shared/user'
+    = partial 'tech/block'

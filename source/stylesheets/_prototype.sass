@@ -1,9 +1,21 @@
 body.prototype
   background: #fff
 
+.application-navbar.navbar-min
+  display: none
+
+body.navbar-min
+  .application-navbar
+    display: none
+    &.navbar-min
+      display: block
+
+  
+
 .prototype-container
   //padding-top: 70px
   background: #fff
+
 
 $photoblockHeight: 320px*0.3
 
@@ -39,3 +51,37 @@ $photoblockHeight: 320px*0.3
 
 .tech-photo-img
   max-width: 100%
+
+.tech-container
+  padding: $grid-gutter-width/2 0
+  background: $grayLighter
+  margin:
+    top: $grid-gutter-width
+    bottom: $grid-gutter-width
+  .container &
+    margin:
+      left: - $grid-gutter-width/2
+      right: - $grid-gutter-width/2
+
+
+.tech-block
+  border: 1px solid $grayLighter
+  background: #fff
+  overflow: hidden
+  margin:
+    top: $grid-gutter-width/2
+    bottom: $grid-gutter-width/2
+  .tech-photo-img
+    height: 200px
+    background:
+      color: #fff
+      repeat: no-repeat
+      position: center top
+      size: cover
+
+.tech-categories
+  .nav.nav-pills
+    & > li
+      & > a
+        padding: 4px 8px
+

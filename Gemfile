@@ -16,6 +16,7 @@ gem 'bootstrap-sass', '3.0.0.0.rc2', :require => false, :github => 'thomas-mcdon
 gem 'compass-rails', require: false
 gem 'haml_coffee_assets', require: false
 
+
 gem 'growl'
 gem 'rb-inotify', '~> 0.9', :require => false
 

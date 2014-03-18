@@ -3,17 +3,26 @@
   %head
     = partial 'layouts/head'
   %body{class: current_page.data.body_class || 'page'}
-    .navbar.navbar-default.navbar-static-top.application-navbar
+    .navbar.navbar-default.navbar-static-top.application-navbar.navbar-min
       .container
         .pull-left
           -#= link_to root_app_path do
           = link_to "javascript:window.history.back()", class: 'navbar-brand' do
             = ficon 'left-open-big'
-
-
           = link_to "#{root_app_path}", class: 'navbar-brand' do
             Аренда спецтехники
-
+    .navbar.navbar-default.navbar-static-top.application-navbar.navbar-app
+      .container
+        .pull-left
+          -#= link_to root_app_path do
+          = link_to "#{root_app_path}", class: 'navbar-brand' do
+            Аренда спецтехники
+        .pull-right
+          %button.app-nav-toggle.navbar-toggle.navbar-fixed-item{type: "button"}
+            .icon-bar-btn
+              %span.icon-bar
+              %span.icon-bar
+              %span.icon-bar
         -#.navbar-collapse.collapse
           %ul.nav.navbar-nav.pull-right
             -# TODO add active link state
