@@ -5,28 +5,26 @@ body_class: prototype main
 ---
 
 %section.tech-main-content
+  %h3.no-margin-top Трактор Т-150 гусечничный
+  %p
+    = partial 'shared/user'
   .row
-    .col-xs-12.col-md-8
-      .visible-xs.visible-sm
-        %h3.no-margin-top Трактор Т-150 гусечничный
-      %p
-        = partial 'shared/user'
+    .col-xs-4
       .tech-photo
-        %img.tech-photo-img{src: "#{root_app_path}images/t150.jpg"}
-      .row.visible-xs.visible-sm
-        .col-xs-9.col-xs-offset-2
-          %h3
-            %nowrap 8 900 руб.
-            %small.text-muted
-              в день
+        .tech-photo-img{style: "background-image: url('#{root_app_path}images/t150.jpg')"}
+          %img{src: empty_image_src, width: '100%'}
+    .col-xs-8
+      %h3.no-margins
+        %nowrap 8 900 руб.
+        %small.text-muted в день
       - parameters = { 'Тип' => 'Гусеничный', 'Тяговый класс' => '4',  }
-      %table.table
+      %table.table.table-condensed.no-margin-bottom
         - parameters.each_pair do |key, value|
           %tr
             %td= key
             %td= value
 
-      = partial 'shared/order_form'
+  = partial 'shared/order_form'
 %hr
 .well
   %p
@@ -46,6 +44,9 @@ body_class: prototype main
   %table.table
     - for i in 0..3
       %tr{ href: "#{root_app_path}tech/show.html", role: 'tech-block'}
+        %td
+          .tech-photo-img{style: "background-image: url('#{root_app_path}images/t150.jpg')"}
+            %img{src: empty_image_src, width: 32}
         %td
           %strong Трактор Т-150 гусечничный
         %td

@@ -4,41 +4,34 @@ layout: prototype
 body_class: prototype navbar-min
 ---
 
-.row
-  .col-xs-3
-    .signup-photo-block.photo-block-small
-      = ficon 'camera-1', size: 20, color: 'gray-light'
-  .col-xs-9
-    %small.text-muted Трактор
-    %h4.no-margins.text-overflow Т-150 гусеничный (СМД-60, 160 л.с)
-    %h5.no-margin-bottom.text-overflow
-      8(905)334-44-35
-      Василий
-%hr.small
--#%small.text-muted
-  Добавьте информацию о вашей технике.
-  При поступлении заказа на вашу технику мы уведомим вас с помощью SMS.
+.btn.btn-lg.btn-default.btn-block.btn-take-picture
+  %input.signup-photo-input{type: :file, accept: 'image/*', value: 'Сфотографировать', role: 'signup-photo-input'}
+  %a.gray-link{role: 'signup-take-picture'}
+    = ficon 'camera-1', size: 20, color: 'gray-light'
+    -#Сфотографировать
+.has-error
+  .help-block
+    Фото техники обязательно к загрузке
+
+
+%br
 .row
   .col-md-6.col-md-offset-3
-    %form.form-vertical
+    %form.form-vertical{ href: 'step2.html', role: 'signup-form-1'}
       .form-group
-        .row
-          .col-xs-6
-            %input.form-control{placeholder: 'цена аренды'}
-          .col-xs-6
-            %select.form-control
-              - ['р. в час', 'р. в день'].each do |o|
-                %option= o
+        %select.form-control{placeholder: 'Тип'}
+          - options = ['Трактор', 'Экскаватор', 'Кран', 'Манипулятор', 'Автотранспорт', 'Прочее']
+          - options.each do |o|
+            %option= o
       .form-group
-        %textarea.form-control.signup-description{ placeholder: 'Описание техники' }
+        %input.form-control{placeholder: 'Название техники', required: :required}
       .form-group
-        .row
-          .col-xs-6
-            %input.form-control{placeholder: 'SMS-код', size: 4, maxlength: 4, type: :tel, required: :required }
-          .col-xs-6
-            %a.btn.btn-default.btn-block.btn-warning{href: 'javascript:alert("на номер  8(906)333-44-55 выслан код");'}
-              выслать ещё раз
-      %a.btn.btn-primary.btn-lg.btn-block{ href: '../tech/show.html'} Опубликовать
+        %input.form-control{placeholder: 'Имя владельца', required: :required}
+      .form-group.has-error
+        %input.form-control{placeholder: '8(999)111-22-22 (Телефон для заявок)', maxlength: 11, type: :tel, required: :required, value: '8(999)111-22-22'}
+        .help-block
+          Такой номер уже зарегистрирован
 
+      %a.btn.btn-primary.btn-lg.btn-block{type: :submit,  href: 'step4.html' }  Зарегистрировать
 
 

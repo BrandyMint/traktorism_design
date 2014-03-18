@@ -18,3 +18,9 @@ $ ->
     href = $(@).attr 'href'
     window.location.href = href
 
+  alertOnce = $('@alert-once')
+  alertOnce.one 'click', (e) ->
+    e.preventDefault()
+    msg = $(@).data('alert')
+    alert msg
+

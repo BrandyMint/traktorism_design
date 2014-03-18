@@ -1,0 +1,29 @@
+- pattern = locals[:pattern] || ''
+
+- demo_files = Dir['source/images/screens/*']
+- demo_files.map { |f| f.split('/') }
+- demo_files_sorted = demo_files.sort {|a,b| a.gsub(/[^\d]/, '').to_i <=> b.gsub(/[^\d]/, '').to_i}
+- pages = []
+- demo_files.each do |df|
+  - filename = df.gsub('source/images/screens/','').gsub('/','')
+  - pages.push filename if df.match(pattern)
+
+.container
+  %br
+  = link_to 'Back', root_app_path, class: 'btn btn-default'
+  %br
+  %br
+  .userflow
+    .row
+      - if pages.present?
+        - pages.each do |page|
+          .col-xs-6.col-sm-3
+            %img.userflow-image{src: "#{root_app_path}images/screens/#{page}" }
+      - if locals[:addon].present?
+        .col-xs-6.col-sm-3
+          .alert.alert-info
+            = ficon 'right-open-big'
+            = locals[:addon]
+
+
+

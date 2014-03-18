@@ -12,8 +12,6 @@ body.navbar-min
     &.navbar-min
       display: block
 
-  
-
 .prototype-container
   //padding-top: 70px
   background: #fff
@@ -51,8 +49,9 @@ $photoblockHeight: 320px*0.3
   background: $grayLightest
 
 
-.tech-photo-img
-  max-width: 100%
+.tech-photo
+  img
+    max-width: 100%
 
 .tech-container
   padding: $grid-gutter-width/2 0
@@ -68,19 +67,26 @@ $photoblockHeight: 320px*0.3
 
 .tech-block
   display: block
-  border: 1px solid $grayLighter
+  border-bottom: 1px solid $grayLighter
   background: #fff
   overflow: hidden
-  margin:
-    top: $grid-gutter-width/2
-    bottom: $grid-gutter-width/2
-  .tech-photo-img
-    height: 200px
-    background:
-      color: #fff
-      repeat: no-repeat
-      position: center top
-      size: cover
+  padding: 5px
+  &[href]
+    cursor: pointer
+
+  &.tech-block-large
+    margin:
+      top: $grid-gutter-width/2
+      bottom: $grid-gutter-width/2
+    .tech-photo-img
+      height: 200px
+
+.tech-photo-img
+  background:
+    color: #fff
+    repeat: no-repeat
+    position: center top
+    size: cover
 
 .tech-block-short
   padding: $grid-gutter-width/2 0

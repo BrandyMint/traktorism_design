@@ -6,11 +6,16 @@ body_class: prototype
 
 
 .tech-categories
-  %ul.nav.nav-pills
-    - categories = ['Все категории', 'Трактор', 'Экскаватор', 'Кран', 'Манипулятор', 'Автотранспорт', 'Прочее']
-    - categories.each_with_index do |c, i|
-      %li{class: "tech-category-item #{i==0 ? 'active' : '' }"}
-        %a.tech-category-item-link= c
+  - categories = ['Все категории', 'Трактор', 'Экскаватор', 'Кран', 'Манипулятор', 'Автотранспорт', 'Прочее']
+  .dropdown
+    %button.btn.btn-block.btn-default#categories-menu{ data: {toggle: :dropdown}, type: :button }
+      = categories[0]
+      %span.caret
+    %ul.dropdown-menu{  'aria-labelledby' => 'categories-menu' }
+      - categories.each_with_index do |c, i|
+        - unless i == 0
+          %li.tech-category-item
+            %a.tech-category-item-link= c
 
 %section.tech-container
   .container
@@ -20,7 +25,8 @@ body_class: prototype
           плитка
         .btn.btn-default
           таблица
-
+  %hr.mini
+  .container
     .clearfix
     - for i in 0..6
       = partial 'tech/block'

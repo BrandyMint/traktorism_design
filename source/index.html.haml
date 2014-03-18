@@ -8,18 +8,33 @@ body_class: index
 - demo_files = Dir['source/images/demo/*']
 - demo_files.map { |f| f.split('/') }
 - demo_files_sorted = demo_files.sort {|a,b| a.gsub(/[^\d]/, '').to_i <=> b.gsub(/[^\d]/, '').to_i}
+
 -# demo_files_sorted
 -#.btn-group.btn-group-vertical.btn-block
-%br
-= link_to 'signup flow', 'signup/', class: 'btn btn-default'
-= link_to 'tech index', 'tech/', class: 'btn btn-default'
-= link_to 'tech page', 'tech/show.html', class: 'btn btn-default'
-%hr
 
-= link_to 'all screens', 'screens/composed.png', target: :blank, class: 'btn btn-lg btn-block btn-primary'
+.index-container
+  .container
+    %h1 Prototype
 
-%hr
+    %ul.nav.nav-pills
+      %li= link_to 'signup', 'signup/'
+      %li= link_to 'index (all offers)', 'tech/'
+      %li= link_to 'offer page', 'tech/show.html'
+    
+    %hr
 
+    %h1  User flows
+
+    %ul.nav.nav-pills
+      %li= link_to 'signup flow', 'userflow/signup.html'
+      %li= link_to 'tech flow', 'userflow/tech.html'
+
+    %hr
+    = link_to 'all screens (image)', "#{root_app_path}images/screens/composed.png", target: :blank, class: 'btn btn-primary'
+    %br
+    %br
+.container
+  %h1 Design
 .row
   - demo_files_sorted.each do |l|
     - if !l.match(/mobile/)

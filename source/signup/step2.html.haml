@@ -1,5 +1,5 @@
 ---
-title: Подача объявления (Шаг 2 из 2)
+title: Подача объявления (Шаг 1 из 2)
 layout: prototype
 body_class: prototype navbar-min
 ---
@@ -9,15 +9,11 @@ body_class: prototype navbar-min
   %a.gray-link{role: 'signup-take-picture'}
     = ficon 'camera-1', size: 20, color: 'gray-light'
     -#Сфотографировать
-.has-error
-  .help-block
-    Фото техники обязательно к загрузке
-
-
+  
 %br
 .row
   .col-md-6.col-md-offset-3
-    %form.form-vertical{ href: 'step2.html', role: 'signup-form-1'}
+    %form.form-vertical{ role: 'signup-form-1'}
       .form-group
         %select.form-control{placeholder: 'Тип'}
           - options = ['Трактор', 'Экскаватор', 'Кран', 'Манипулятор', 'Автотранспорт', 'Прочее']
@@ -27,11 +23,10 @@ body_class: prototype navbar-min
         %input.form-control{placeholder: 'Название техники', required: :required}
       .form-group
         %input.form-control{placeholder: 'Имя владельца', required: :required}
-      .form-group.has-error
-        %input.form-control{placeholder: '8(999)111-22-22 (Телефон для заявок)', maxlength: 11, type: :tel, required: :required, value: '8(999)111-22-22'}
-        .help-block
-          Такой номер уже зарегистрирован
+      .form-group
+        %input.form-control{placeholder: 'Контактный телефон (для заявок)', maxlength: 11, type: :tel, required: :required}
+      %a.btn.btn-primary.btn-lg.btn-block{type: :submit,  href: 'step3.html'}
+        Зарегистрировать
 
-      %a.btn.btn-primary.btn-lg.btn-block{type: :submit,  href: 'step3.html' }  Зарегистрировать
-
-
+:javascript
+  alert('Для регистрации заполните все поля');
