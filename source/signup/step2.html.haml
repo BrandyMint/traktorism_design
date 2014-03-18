@@ -28,5 +28,6 @@ body_class: prototype navbar-min
       %a.btn.btn-primary.btn-lg.btn-block{type: :submit,  href: 'step3.html'}
         Зарегистрировать
 
-:javascript
-  alert('Для регистрации заполните все поля');
+:coffeescript
+  $ ->
+    alert('Для регистрации заполните все поля')

@@ -3,4 +3,4 @@ rm -rf source/images/screens/localhost*.png
 echo 'getting pages list...'
 PAGES=$(curl http://localhost:4567/pages.txt)
 echo 'creating screenshots...'
-eval webkit2png -D source/images/screens -W 300 -H 568 --clipwidth=50 -F $PAGES
+eval webkit2png -D source/images/screens -W 300 -H 568 --delay=0.5 --clipwidth=50 -F $PAGES
