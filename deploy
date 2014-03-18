@@ -1,4 +1,5 @@
 #!/bin/bash
+./auto_screens
 ./prepare_screens
 git add -A
 git commit -m 'build'
