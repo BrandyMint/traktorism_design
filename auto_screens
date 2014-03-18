@@ -1,6 +1,6 @@
 #!/bin/bash
-rm -rf screens/localhost*.png
+rm -rf source/screens/localhost*.png
 echo 'getting pages list...'
 PAGES=$(curl http://localhost:4567/pages.txt)
 echo 'creating screenshots...'
-eval webkit2png -D screens -W 300 -H 568 --clipwidth=50 -F $PAGES
+eval webkit2png -D source/screens -W 300 -H 568 --clipwidth=50 -F $PAGES
