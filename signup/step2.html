@@ -98,7 +98,12 @@
           </div>
         </div>
         <script>
-          alert('Для регистрации заполните все поля');
+          (function() {
+            $(function() {
+              return alert('Для регистрации заполните все поля');
+            });
+          
+          }).call(this);
         </script>
       </div>
     </div>
