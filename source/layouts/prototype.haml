@@ -25,8 +25,10 @@
               %span.icon-bar
         .navbar-collapse.collapse#navbar-menu
           %ul.nav.navbar-nav.pull-right
-            %li
-              = link_to 'Каталог техники', "#{root_app_path}tech/"
+            - nav_links = {'Каталог техники' => 'tech/', 'Подать объявление' => 'signup/', 'Помощь' => 'help/', 'Контакты' => 'contacts/'}
+            - nav_links.each_pair do |title, link|
+              %li
+                = link_to title, "#{root_app_path}#{link}"
         .clearfix
     .prototype-container
       .container
