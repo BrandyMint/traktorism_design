@@ -1,1 +1,1 @@
-http://localhost:4567/signup/index.html http://localhost:4567/signup/step2.html http://localhost:4567/signup/step3.html http://localhost:4567/tech/index.html http://localhost:4567/tech/show.html
+http://localhost:4567/signup/index.html http://localhost:4567/signup/step2.html http://localhost:4567/signup/step3.html http://localhost:4567/signup/step4.html http://localhost:4567/signup/step5.html http://localhost:4567/tech/index.html http://localhost:4567/tech/show.html

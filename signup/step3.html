@@ -61,55 +61,45 @@
     </div>
     <div class='prototype-container'>
       <div class='container'>
-        <div class='row'>
-          <div class='col-xs-3'>
-            <div class='signup-photo-block photo-block-small'>
-              <i size="20" color="gray-light" class="fontello-icon-camera-1 icon-size-20 icon-color-gray-light 
-                    v-align- "></i>
-            </div>
-          </div>
-          <div class='col-xs-9'>
-            <small class='text-muted'>Трактор</small>
-            <h4 class='no-margins text-overflow'>Т-150 гусеничный (СМД-60, 160 л.с)</h4>
-            <h5 class='no-margin-bottom text-overflow'>
-              8(905)334-44-35
-              Василий
-            </h5>
+        <div class='btn btn-lg btn-default btn-block btn-take-picture'>
+          <input accept='image/*' class='signup-photo-input' role='signup-photo-input' type='file' value='Сфотографировать'>
+          <a class='gray-link' role='signup-take-picture'>
+            <i size="20" color="gray-light" class="fontello-icon-camera-1 icon-size-20 icon-color-gray-light 
+                  v-align- "></i>
+          </a>
+        </div>
+        <div class='has-error'>
+          <div class='help-block'>
+            Фото техники обязательно к загрузке
           </div>
         </div>
-        <hr class='small'>
+        <br>
         <div class='row'>
           <div class='col-md-6 col-md-offset-3'>
-            <form class='form-vertical'>
+            <form class='form-vertical' href='step2.html' role='signup-form-1'>
               <div class='form-group'>
-                <div class='row'>
-                  <div class='col-xs-6'>
-                    <input class='form-control' placeholder='цена аренды'>
-                  </div>
-                  <div class='col-xs-6'>
-                    <select class='form-control'>
-                      <option>р. в час</option>
-                      <option>р. в день</option>
-                    </select>
-                  </div>
+                <select class='form-control' placeholder='Тип'>
+                  <option>Трактор</option>
+                  <option>Экскаватор</option>
+                  <option>Кран</option>
+                  <option>Манипулятор</option>
+                  <option>Автотранспорт</option>
+                  <option>Прочее</option>
+                </select>
+              </div>
+              <div class='form-group'>
+                <input class='form-control' placeholder='Название техники' required='required'>
+              </div>
+              <div class='form-group'>
+                <input class='form-control' placeholder='Имя владельца' required='required'>
+              </div>
+              <div class='form-group has-error'>
+                <input class='form-control' maxlength='11' placeholder='8(999)111-22-22 (Телефон для заявок)' required='required' type='tel' value='8(999)111-22-22'>
+                <div class='help-block'>
+                  Такой номер уже зарегистрирован
                 </div>
               </div>
-              <div class='form-group'>
-                <textarea class='form-control signup-description' placeholder='Описание техники'></textarea>
-              </div>
-              <div class='form-group'>
-                <div class='row'>
-                  <div class='col-xs-6'>
-                    <input class='form-control' maxlength='4' placeholder='SMS-код' required='required' size='4' type='tel'>
-                  </div>
-                  <div class='col-xs-6'>
-                    <a class='btn btn-default btn-block btn-warning' href='javascript:alert("на номер  8(906)333-44-55 выслан код");'>
-                      выслать ещё раз
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <a class='btn btn-primary btn-lg btn-block' href='../tech/show.html'>Опубликовать</a>
+              <a class='btn btn-primary btn-lg btn-block' href='step4.html' type='submit'>Зарегистрировать</a>
             </form>
           </div>
         </div>

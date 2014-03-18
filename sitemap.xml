@@ -56,6 +56,18 @@
         <priority>0.5</priority>
       </url>
       <url>
+        <loc>http://brandymint.github.io/traktorism_design//signup/step4.html</loc>
+        <lastmod>2014-03-18T00:00:00+04:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://brandymint.github.io/traktorism_design//signup/step5.html</loc>
+        <lastmod>2014-03-18T00:00:00+04:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
         <loc>http://brandymint.github.io/traktorism_design//tech/index.html</loc>
         <lastmod>2014-03-18T00:00:00+04:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -63,6 +75,18 @@
       </url>
       <url>
         <loc>http://brandymint.github.io/traktorism_design//tech/show.html</loc>
+        <lastmod>2014-03-18T00:00:00+04:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://brandymint.github.io/traktorism_design//userflow/signup.html</loc>
+        <lastmod>2014-03-18T00:00:00+04:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://brandymint.github.io/traktorism_design//userflow/tech.html</loc>
         <lastmod>2014-03-18T00:00:00+04:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
