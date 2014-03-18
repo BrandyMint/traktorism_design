@@ -10,8 +10,8 @@
     <meta content='translucent-black' name='apple-mobile-web-app-status-bar-style'>
     <link href='http://brandymint.github.io/traktorism_design/stylesheets/application.css' media='screen' rel='stylesheet' type='text/css'>
   </head>
-  <body class='prototype'>
-    <div class='navbar navbar-default navbar-static-top application-navbar'>
+  <body class='prototype navbar-min'>
+    <div class='navbar navbar-default navbar-static-top application-navbar navbar-min'>
       <div class='container'>
         <div class='pull-left'>
                     <a class="navbar-brand" href="javascript:window.history.back()"><i class="fontello-icon-left-open-big icon-size- icon-color- 
@@ -21,6 +21,31 @@
                     <a class="navbar-brand" href="http://brandymint.github.io/traktorism_design/">Аренда спецтехники
           </a>
 
+        </div>
+      </div>
+    </div>
+    <div class='navbar navbar-default navbar-fixed-top application-navbar navbar-app'>
+      <div class='container'>
+        <div class='pull-left'>
+                    <a class="navbar-brand" href="http://brandymint.github.io/traktorism_design/">Аренда спецтехники
+          </a>
+
+        </div>
+        <div class='pull-right'>
+          <button class='navbar-toggle' data-target='#navbar-menu' data-toggle='collapse' type='button'>
+            <div class='icon-bar-btn'>
+              <span class='icon-bar'></span>
+              <span class='icon-bar'></span>
+              <span class='icon-bar'></span>
+            </div>
+          </button>
+        </div>
+        <div class='navbar-collapse collapse' id='navbar-menu'>
+          <ul class='nav navbar-nav pull-right'>
+            <li>
+              <a href="http://brandymint.github.io/traktorism_design/tech/">Каталог техники</a>
+            </li>
+          </ul>
         </div>
         <div class='clearfix'></div>
       </div>
@@ -75,7 +100,7 @@
                   </div>
                 </div>
               </div>
-              <a class='btn btn-primary btn-lg btn-block' href='javascript:alert("Регистрация пройдена");'>Опубликовать</a>
+              <a class='btn btn-primary btn-lg btn-block' href='../tech/show.html'>Опубликовать</a>
             </form>
           </div>
         </div>
