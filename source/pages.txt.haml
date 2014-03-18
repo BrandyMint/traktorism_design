@@ -2,7 +2,9 @@
 - pages = ''
 -# page.children.map {|c| c.path.match(/html/) ? pages.push("http://localhost:4567/#{c.path}") : ''}
 - page.children.each do |c|
-  - if c.path.match(/html/)
+  - if c.path.match(/html/) && !c.path.match(/(demo|fontello|error)/)
     - pages += "http://localhost:4567/#{c.path} "
-
+    - if c.children.present?
+      - c.children.each do |cc|
+        - pages += "http://localhost:4567/#{cc.path} "
 = pages

@@ -27,7 +27,7 @@ body_class: index
         - link = filename.gsub(/\.(png|jpg|pdf)/,'')
         .col-xs-6.col-sm-3
           .index-preview
-            = link_to "#{link}.html" do
+            = link_to "demo_#{link}.html" do
               %img{src: "./#{l.gsub('source','')}" }
               %br
 %hr
@@ -39,7 +39,7 @@ body_class: index
         - link = filename.gsub(/\.(png|jpg|pdf)/,'')
         .col-xs-6.col-sm-3
           .index-preview
-            = link_to "#{link}.html" do
+            = link_to "demo_#{link}.html" do
               %img{src: "./#{l.gsub('source','')}" }
               %br
 
@@ -48,5 +48,5 @@ body_class: index
   - demo_files.each do |l|
     - if l.match(/\./) && !l.match(/(png|jpg)/)
       - filename = l.gsub('source/images/demo','').gsub('/','')
-      = link_to "#{filename}", "#{filename}", class: 'btn btn-lg btn-block btn-default'
+      = link_to "#{filename}", "images/demo/#{filename}", class: 'btn btn-lg btn-block btn-default'
 

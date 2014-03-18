@@ -1,5 +1,5 @@
 #!/bin/bash
 echo 'preparing screenshots...';
 rm -rf screens/composed.png;
-convert screens/*.png -bordercolor gray -border 20x20 +append screens/composed.png;
+convert screens/*.png -background gray -bordercolor gray -border 20x20 +append screens/composed.png;
 echo 'screenshots are ready';
