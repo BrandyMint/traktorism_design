@@ -11,23 +11,22 @@
             = ficon 'left-open-big'
           = link_to "#{root_app_path}", class: 'navbar-brand' do
             Аренда спецтехники
-    .navbar.navbar-default.navbar-static-top.application-navbar.navbar-app
+    .navbar.navbar-default.navbar-fixed-top.application-navbar.navbar-app
       .container
         .pull-left
           -#= link_to root_app_path do
           = link_to "#{root_app_path}", class: 'navbar-brand' do
             Аренда спецтехники
         .pull-right
-          %button.app-nav-toggle.navbar-toggle.navbar-fixed-item{type: "button"}
+          %button.navbar-toggle{type: "button", data: {toggle: :collapse, target: '#navbar-menu'}}
             .icon-bar-btn
               %span.icon-bar
               %span.icon-bar
               %span.icon-bar
-        -#.navbar-collapse.collapse
+        .navbar-collapse.collapse#navbar-menu
           %ul.nav.navbar-nav.pull-right
-            -# TODO add active link state
             %li
-              = link_to 'link', '#'
+              = link_to 'Каталог техники', "#{root_app_path}tech/"
         .clearfix
     .prototype-container
       .container
