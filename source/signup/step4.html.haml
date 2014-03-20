@@ -36,9 +36,9 @@ body_class: prototype navbar-min
           .col-xs-6
             %input.form-control{placeholder: 'SMS-код', size: 4, maxlength: 4, type: :tel, required: :required }
           .col-xs-6
-            %a.btn.btn-default.btn-block.btn-warning{href: 'javascript:alert("на номер  8(906)333-44-55 выслан код");'}
+            %a.btn.btn-default.btn-block.btn-warning
               выслать SMS-код
       %a.btn.btn-primary.btn-lg.btn-block{ href: 'step5.html'} Опубликовать
 
 
-
+= partial 'shared/modal', locals: {content: 'на номер  8(906)333-44-55 выслан код', link: 'step5.html'}

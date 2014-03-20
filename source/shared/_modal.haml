@@ -1,0 +1,19 @@
+.modal-block
+  .modal.modal-alert-container
+    .modal-dialog.modal-alert
+      .modal-content
+        - if locals[:header]
+          .modal-header
+            = locals[:header]
+        - if locals[:content]
+          .modal-body
+            = locals[:content]
+        .modal-footer
+          - if locals[:link]
+            %a.btn.btn-link.btn-block{ href: link}
+              %strong Ok
+          - else
+            %a.btn.btn-link.btn-block{ data: {dismiss: :modal}}
+              %strong Ok
+
+.modal-backdrop.fade.in

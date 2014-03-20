@@ -101,3 +101,32 @@ $photoblockHeight: 320px*0.3
   margin: $grid-gutter-width/2 0
   img
     max-width: 100%
+
+
+.modal
+  //text-align: center
+  &:before
+    content: ''
+    display: inline-block
+    height: 100%
+    vertical-align: middle
+    margin-right: -0.25em
+    /* Adjusts for spacing
+
+.modal-alert-container
+  display: inline-block
+  text-align: center
+
+.modal-alert
+  //centered
+  display: inline-block
+  vertical-align: middle
+  width: 90%
+  max-width: $screen-xs
+  .modal-footer
+    padding: 5px
+    .btn
+      text-transform: uppercase
+  .modal-content
+    +box-shadow(none)
+    border: none

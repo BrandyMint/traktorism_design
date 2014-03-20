@@ -28,6 +28,4 @@ body_class: prototype navbar-min
       %a.btn.btn-primary.btn-lg.btn-block{type: :submit,  href: 'step3.html'}
         Зарегистрировать
 
-:coffeescript
-  $ ->
-    alert('Для регистрации заполните все поля')
+= partial 'shared/modal', locals: {content: 'Заполните все поля', link: 'step3.html'}
