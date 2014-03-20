@@ -97,14 +97,23 @@
             </form>
           </div>
         </div>
-        <script>
-          (function() {
-            $(function() {
-              return alert('Для регистрации заполните все поля');
-            });
-          
-          }).call(this);
-        </script>
+        <div class='modal-block'>
+          <div class='modal modal-alert-container'>
+            <div class='modal-dialog modal-alert'>
+              <div class='modal-content'>
+                <div class='modal-body'>
+                  Заполните все поля
+                </div>
+                <div class='modal-footer'>
+                  <a class='btn btn-link btn-block' href='step3.html'>
+                    <strong>Ok</strong>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='modal-backdrop fade in'></div>
       </div>
     </div>
   </body>
